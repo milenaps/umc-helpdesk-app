@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+	<display-name>Xtreme Service Request</display-name>
+	<description>Sistema de gerenciamento de chamados</description>
+	<servlet>
+		<servlet-name>EfetuarLogin</servlet-name>
+		<display-name>EfetuarLogin</display-name>
+		<description>Servlet para a autenticacao dos usuarios</description>
+		<servlet-class>com.xsr.controle.EfetuarLogin</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ManterTickets</servlet-name>
+		<display-name>ManterTickets</display-name>
+		<description>Servlet para controle de tickets</description>
+		<servlet-class>com.xsr.controle.ManterTickets</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ManterUsuarios</servlet-name>
+		<display-name>ManterUsuarios</display-name>
+		<description>Servlet para controle de usuarios</description>
+		<servlet-class>com.xsr.controle.ManterUsuarios</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ManterTiposDeAcesso</servlet-name>
+		<display-name>ManterTiposDeAcesso</display-name>
+		<description>Servlet para controle de tipos de acesso</description>
+		<servlet-class>com.xsr.controle.ManterTiposDeAcesso</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ManterReports</servlet-name>
+		<display-name>ManterReports</display-name>
+		<description>Servlet para controle de reports</description>
+		<servlet-class>com.xsr.controle.ManterReports</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ManterSeveridades</servlet-name>
+		<display-name>ManterSeveridades</display-name>
+		<description>Servlet para controle de severidades</description>
+		<servlet-class>com.xsr.controle.ManterSeveridades</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ManterStatus</servlet-name>
+		<display-name>ManterStatus</display-name>
+		<description>Servlet para controle de status</description>
+		<servlet-class>com.xsr.controle.ManterStatus</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ManterCategorias</servlet-name>
+		<display-name>ManterCategorias</display-name>
+		<description>Servlet para controle de categorias</description>
+		<servlet-class>com.xsr.controle.ManterCategorias</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManterTickets</servlet-name>
+		<url-pattern>/servlet/ManterTickets</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ManterUsuarios</servlet-name>
+		<url-pattern>/servlet/ManterUsuarios</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EfetuarLogin</servlet-name>
+		<url-pattern>/servlet/EfetuarLogin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ManterTiposDeAcesso</servlet-name>
+		<url-pattern>/servlet/ManterTiposDeAcesso</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ManterReports</servlet-name>
+		<url-pattern>/servlet/ManterReports</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ManterSeveridades</servlet-name>
+		<url-pattern>/servlet/ManterSeveridades</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ManterStatus</servlet-name>
+		<url-pattern>/servlet/ManterStatus</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ManterCategorias</servlet-name>
+		<url-pattern>/servlet/ManterCategorias</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>/interfaces/Autenticar.jsp</welcome-file>
+	</welcome-file-list>
+	<error-page>
+		<error-code>Pagina de erro</error-code>
+		<location>/interfaces/ErroGeral.jsp</location>
+	</error-page>
+	<!--security-constraint>
+		<web-resource-collection>
+			<web-resource-name>/interfaces/*</web-resource-name>
+		</web-resource-collection>
+	</security-constraint-->
+</web-app>

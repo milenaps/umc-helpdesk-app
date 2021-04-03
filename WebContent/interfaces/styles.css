@@ -1,0 +1,204 @@
+<style type="text/css">
+	
+	/* Definicoes gerais de estilo */
+
+	p
+	{
+		color: #000000;
+		font: 10px Verdana;
+	}
+
+	body { background-color: #F0F0F0; }
+
+	a:link
+	{
+		text-decoration: none;
+		color: #00500F;
+	}
+
+	a:visited
+	{
+		text-decoration: none;
+		color: #00500F;
+	}
+
+	a:hover
+	{
+		color: #0190A0;
+		text-decoration: none;
+	}
+
+	a:active {text-decoration: none;}
+
+	#menu
+	{
+		width: 143px;
+		float: left;
+		font: 11px Verdana;
+		text-align: left;
+	}
+
+	#escope, #header, #footer
+	{
+		width: 998px;
+	}
+
+	/* Definicao de estilo para o cabecalho */
+
+	#header
+	{
+		background-image: url(<%=Config.getCSSURL()%>header.jpg);
+		height: 54px;
+		text-align: right;
+		color: white;
+		line-height: 58px;
+		font-family: Verdana, sans;
+	}
+
+	/* Definicao de estilo para o corpo */
+
+	#escope /*corpo*/
+	{
+		background-color: #FFFFFF;
+	}
+
+	/* Definicoes de estilo para o menu */
+
+	#mn
+	{
+		width: 998px;
+		height: 25px;
+		padding: 0px;
+		font: 11px Verdana;
+		background-image: url(<%=Config.getCSSURL()%>mn.jpg);
+	}
+
+	#mn a:hover
+	{
+		color: #0190A0;
+	}
+
+	#mn a:visited
+	{
+		color: #00500F;
+	}
+
+	#mn .selected { color: #0190A0; }
+
+	#menu
+	{
+		width: 143px;
+		float: left;
+		font: 11px Verdana;
+		text-align: left;
+	}
+
+	#mn_fim
+	{
+		background-image: url(<%=Config.getCSSURL()%>menu_end.gif);
+		height: 8px;
+	}
+
+	#menu_
+	{
+		position: relative;
+		display: block;
+		background-image: url(<%=Config.getCSSURL()%>menu_p.gif);
+		color: #333333;
+		padding: 2px;
+	}
+
+	#menu-selected
+	{
+		color: #0F0F33;
+		display: block;
+		background-image: url(<%=Config.getCSSURL()%>menu_x.gif);
+	}
+
+	#menu_ a
+	{ color: #333333; }
+
+	#menu_ a:hover
+	{
+		color: #0F0F33;
+		display: block;
+		background-image: url(<%=Config.getCSSURL()%>menu_x.gif);
+	}
+
+	#spc
+	{
+		position: relative;
+		height: 4px;
+		background-image: url(<%=Config.getCSSURL()%>menu_x.gif);
+	}
+
+	/* Definicoes de estilo para a area de conteudo */
+
+	#content
+	{
+		width: 840px;
+		float: right;
+		font-family: Verdana;
+		text-align: left;
+	}
+
+	.title
+	{
+		color: #000000;
+		font-weight: bold;
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.emphasis
+	{
+		color: #00500F;
+		font-size: 13px;
+	}
+
+	.normal
+	{
+		color: #000000;
+		font-size: 11px;
+	}
+
+	.error
+	{
+		color: red;
+		font-size: 12px;
+		font-weight: bold;
+	}
+
+	.small
+	{
+		color: #666666;
+		font-size: 9px;
+	}
+
+	/* Definicoes de estilo para o rodape */
+
+	#footer
+	{
+		background-image: url(<%=Config.getCSSURL()%>footer.jpg);
+		background-repeat: no-repeat;
+		clear: both;
+		height: 25px;
+		font: 11px Verdana;
+		padding-top: 10px;
+	}
+
+	.btn
+	{
+		font-family: Verdana;
+		font-size: 11px;
+		background-color: #F4F4F4;
+		padding: 2px;
+	}
+
+	.tbl, .fld
+	{
+		font-family: Verdana;
+		font-size: 11px;
+		padding: 2px;
+	}
+</style>
