@@ -1,0 +1,8 @@
+= Final project for Analysis and System Development at UMC
+
+Stack:
+
+- Vanilla JavaEE with JSP and Servlets
+- PostgreSQL
+
+Obs: The steps for running this will be added shortly
