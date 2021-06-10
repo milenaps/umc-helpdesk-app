@@ -22,11 +22,11 @@ public class EfetuarLogin extends HttpServlet {
 				getServletContext().getRequestDispatcher("/interfaces/BoasVindas.jsp").forward(request, response);
 			}
 			else {
-				response.sendRedirect(Config.getPageURL() + "Autenticar2.jsp");
+				response.sendRedirect("/interfaces/Autenticar2.jsp");
 			}
 		}
 		catch (Exception erro1)	{
-			response.sendRedirect(Config.getPageURL() + "ErroGeral.jsp");
+			response.sendRedirect("/interfaces/ErroGeral.jsp");
 			System.out.println("Ocorreu um erro: " + erro1.getMessage());
 		}
 	}

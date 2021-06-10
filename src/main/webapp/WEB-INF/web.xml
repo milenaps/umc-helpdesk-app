@@ -87,7 +87,7 @@
 		<welcome-file>/interfaces/Autenticar.jsp</welcome-file>
 	</welcome-file-list>
 	<error-page>
-		<error-code>Pagina de erro</error-code>
+		<error-code>500</error-code>
 		<location>/interfaces/ErroGeral.jsp</location>
 	</error-page>
 	<!--security-constraint>
