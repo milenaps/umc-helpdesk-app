@@ -11,6 +11,4 @@ services:
     volumes:
       - ../target:/usr/local/tomcat/webapps
     environment:
-      - JPDA_ADDRESS=8000
-      - JPDA_TRANSPORT=dt_socket
-      - -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000
+      - CATALINA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000"
